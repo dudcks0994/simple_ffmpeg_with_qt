@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e21bfa85ef3ae2316b1d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Test_ffmpeg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Test_ffmpeg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test_ffmpeg-Debug-4c8b1e3626c049418ca5.json",
+					"name" : "Test_ffmpeg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test_ffmpeg_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test_ffmpeg_autogen-Debug-8511e5fa3783a5fe5132.json",
+					"name" : "Test_ffmpeg_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Test_ffmpeg_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test_ffmpeg_autogen_timestamp_deps-Debug-5887347cb4295b031f60.json",
+					"name" : "Test_ffmpeg_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kinki/Documents/Test_ffmpeg/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/kinki/Documents/Test_ffmpeg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
