@@ -76,7 +76,7 @@ void VideoWorker::run()
             if (status == STOP)
                 return ;
         }
+        av_packet_unref(&packet);
     }
-    av_packet_unref(&packet);
     return ;
 }

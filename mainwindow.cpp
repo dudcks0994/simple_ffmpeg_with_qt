@@ -76,7 +76,6 @@ int MainWindow::init_video()
 {
     std::string path = filepath.toStdString();
     const char *url = path.c_str();
-    // const char *url = "C:\Users\kinki\Downloads\new\karina_alike.mp4"
     // const char *url = "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8";
     int ret = avformat_open_input(&fmtCtx, url, nullptr, nullptr);
     if (ret != 0)
