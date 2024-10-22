@@ -60,12 +60,12 @@ void VideoWorker::run()
             if (!scale_context)
             {
                 scale_context = sws_getContext(frame.width, frame.height, AVPixelFormat(frame.format), width, height, AV_PIX_FMT_RGB32, SWS_BICUBIC, 0, 0, 0);
+                // qDebug() << frame.height << ", " << height;
                 int bufsize = av_image_get_buffer_size(AV_PIX_FMT_RGB32, width, height, 1);
                 buf = (uint8_t*)av_malloc(bufsize);
                 av_image_fill_arrays(convert_frame.data, convert_frame.linesize, buf, AV_PIX_FMT_RGB32, width, height, 1);
             }
-            sws_scale(scale_context, frame.data, frame.linesize, 0, height, convert_frame.data, convert_frame.linesize);
-            // 픽셀 데이터를 QImage로 변환
+            sws_scale(scale_context, frame.data, frame.linesize, 0, frame.height, convert_frame.data, convert_frame.linesize);
             unsigned char *p = convert_frame.data[0];
             // image_update_lock->lock();
             uchar *bits = image.bits();
@@ -78,6 +78,5 @@ void VideoWorker::run()
         }
     }
     av_packet_unref(&packet);
-    // 업데이트된 이미지를 그리도록 요청
     return ;
 }

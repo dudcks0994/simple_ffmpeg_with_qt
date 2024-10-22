@@ -21,7 +21,7 @@ class VideoWorker : public QThread
     Q_OBJECT
 public:
     explicit VideoWorker(QObject *parent)
-        : QThread(parent), fmtCtx(nullptr), video_context(nullptr){
+        : QThread(parent), fmtCtx(nullptr), video_context(nullptr), scale_context(nullptr){
         memset(&convert_frame, 0, sizeof(AVFrame));
     }
     void setContext(AVFormatContext *a, AVCodecContext* b, int index, int w, int h, int den, int num){

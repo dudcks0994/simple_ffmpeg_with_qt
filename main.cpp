@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow window;
     window.resize(window.width + 40, window.height + 40);
-    window.setWindowTitle("Qt Image Drawing Example");
+    window.setWindowTitle("FT 영상 플레이어");
     window.show();
     return a.exec();
 }
